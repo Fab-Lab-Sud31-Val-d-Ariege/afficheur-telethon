@@ -1,0 +1,47 @@
+Afficheur téléthon
+FabLab Sud 31 Val d'Ariège
+Last Update:  %%mtime(%c)
+%!target: html
+
+
+= Arduino pinout =
+
+== Digital ==
+0  NA
+1  NA
+2  A
+3  B
+4  C
+5  D
+6  vert-banc   Clavier 1
+7  vert        Clavier 6
+8  brun-blanc  Clavier 3
+9  brun        Clavier 5
+10 bleu-blanc  Clavier 2
+11 bleu        Clavier 4
+12 orange      Clavier 7
+
+== Analog ==
+0  BI
+1  RBI Chiffre 0
+2  RBI Chiffre 1
+3  RBI Chiffre 2
+4  RBI Chiffre 3
+5  RBI Chiffre 4
+
+== Keyboard wires ==
+6  vert-banc   Clavier 1
+10 bleu-blanc  Clavier 2
+8  brun-blanc  Clavier 3
+11 bleu        Clavier 4
+9  brun        Clavier 5
+7  vert        Clavier 6
+12 orange      Clavier 7
+
+Keypad Columns on 3,1,5 : { 8, 6, 9 }
+Keypad Rows on  2,7,6,4 : {10, 12, 7, 11}
+
+= Protocol =
+* : annonce la venue d'un nombre
+[1-9] : les chiffres du nombre, pas de virgule
+# : termine la saisie et provoque l'affichage
