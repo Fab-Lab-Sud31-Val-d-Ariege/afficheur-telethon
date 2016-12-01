@@ -57,6 +57,17 @@ void setup() {
   // Initialise l'afficheur
   digitSetup();
 
+  // Teste l'afficheur
+  long montant = 0;
+  for (int i = 0 ; i < 9 ; i++) {
+    montant += 11111;
+    Display(montant);
+    delay(500);
+  }
+  for (int i = 0 ; i < 5 ; i++) {
+    blank(afficheur[i]);
+  }
+
   // Initialise le port série
   Serial.begin(9600);
 }
